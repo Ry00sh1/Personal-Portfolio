@@ -1,0 +1,68 @@
+.doodle {
+    position: fixed;
+    z-index: -1;
+
+}
+
+
+.bio{
+    width: 75%;
+    background: #fff;
+    margin: auto;
+    padding: 3rem;
+    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.2);
+    margin-top: 50px; /* Ajuste este valor conforme necessário para evitar sobreposição com a aba fixa */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu {
+    background-color: rgb(220, 220, 220);
+    border-radius: 3px;
+    transition: border-radius 0.3s ease; /* Adiciona uma transição suave para a propriedade border-radius */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1px;
+    text-justify: distribute;
+}
+
+.menu:hover{
+    border-radius: 10px; /* Aumenta o raio ao passar o mouse para criar um efeito suavizado */
+}
+
+a{  
+    color:rgb(4, 83, 83);
+    text-decoration: none; /* retira todas as alterações 
+                            feitas nas tags de links */
+
+}
+
+.site-title,
+.site-subtitle {
+
+    text-align: center;
+}
+
+.site-subtitle{
+    font-style: italic;
+}
+
+.my-bio {
+    text-align: justify;
+}
+
+a:hover{ /* hover: ação que acontece ao passar o mouse em cima */
+    text-decoration: underline;
+}
+
+.menu ul{
+    display: flex;
+    justify-content:center; /* justifica o conteudo. Necessida do display: flex */
+}
+
+.menu li{
+    margin-right: 50px;
+    list-style: none; /* retira os estilos das listas da classe Menu */
+    font-weight: bold;
+}
