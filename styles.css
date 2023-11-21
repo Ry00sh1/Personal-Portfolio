@@ -5,7 +5,7 @@
 }
 
 
-.bio{
+body{
     width: 75%;
     background: #fff;
     margin: auto;
@@ -38,17 +38,17 @@ a{
 
 }
 
-.site-title,
-.site-subtitle {
+.name,
+.role {
 
     text-align: center;
 }
 
-.site-subtitle{
+.role{
     font-style: italic;
 }
 
-.my-bio {
+.bio {
     text-align: justify;
 }
 
