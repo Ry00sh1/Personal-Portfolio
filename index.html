@@ -6,10 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css" />
         <script src="https://unpkg.com/css-doodle@0.37.3/css-doodle.min.js"></script>
-        <css-doodle class="doodle">
+        <css-doodle click-to-update class="doodle">
                   @grid: 18 / 100vmax / #0a0c27;
                   --hue: calc(180 + 1.5 * @x * @y);
-                  background: hsl(var(--hue), 50%, 70%);
+                  background: hsl(var(--hue), 0%, 100%);
                   margin: -.5px;
                   transition: @r(.5s) ease;
                   clip-path: polygon(@p(
@@ -22,6 +22,7 @@
     </head>
 
     <body>
+        <div class="tudo">
         <nav class="menu">
             <ul>
                 <li><a href="#">Sobre</a></li>
@@ -36,20 +37,20 @@
             <p class="bio">Eng: Industrial Electrician and Industrial Automation Technician. Bachelor's Degree in Computer Engineering. 
 I have a large experience in the IT areas, some examples are: PLCs programing, Arduino programing, Electronic circuits, network, Python and it's framework Django.
 Currently specializing in Database, Artificial Intelligence and Cybersecurity. 
-<br>PT-br: Eletricista Industrial e Técnico em Automação Industrial. Bacharelando em Engenharia da Computação.
+<br><br>PT-br: Eletricista Industrial e Técnico em Automação Industrial. Bacharelando em Engenharia da Computação.
 Possuo grande vivência nas áreas de tecnologia, como por exemplo: programação em CLP's, programação em Arduino, circuitos eletrônicos, redes, Python e em seu framework Django.
 Atualmente me especializando em Banco de Dados, Inteligência Artificial e Cibersegurança.</p>
         </div>
 
+        <h6 class="links">Portfólio</h6>
         <div class="portfolio">
-		    <h6 class="links">Portfólio</h6>
-		    <a href="https://github.com/Ry00sh1">Github</a>
+		    <a href="https://github.com/Ry00sh1"><img src="C:\Users\phase\OneDrive\Área de Trabalho\meuPrimeiroSite\github-icon.png" class="img-thumbnail"></a>
 	    </div>
-        
-        <div class="Contatos">
-		    <h6 class="contatos">Contatos</h6>
-            <span>Email: phasena@outlook.com</span>
-        </div>
-    </body>
-</html>
 
+        <h6 class="contatos">Contatos</h6>
+        <div class="contatos">
+		    <span>Email: phasena@outlook.com</span>
+        </div>
+        </div>
+    
+</html>
