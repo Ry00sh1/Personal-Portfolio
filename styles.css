@@ -5,34 +5,32 @@
 }
 
 
-body{
+.tudo{
     width: 75%;
     background: #fff;
     margin: auto;
     padding: 3rem;
     box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.2);
-    margin-top: 50px; /* Ajuste este valor conforme necessário para evitar sobreposição com a aba fixa */
+    margin-top: 0px; /* Ajuste este valor conforme necessário para evitar sobreposição com a aba fixa */
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .menu {
     background-color: rgb(220, 220, 220);
-    border-radius: 3px;
-    transition: border-radius 0.3s ease; /* Adiciona uma transição suave para a propriedade border-radius */
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+    border-radius: 5px;
+    margin: auto;
     padding: 1px;
-    text-justify: distribute;
+    transition: 250ms linear
+   
 }
 
 .menu:hover{
     border-radius: 10px; /* Aumenta o raio ao passar o mouse para criar um efeito suavizado */
+    
 }
 
 a{  
-    color:rgb(4, 83, 83);
+    color:black;
     text-decoration: none; /* retira todas as alterações 
                             feitas nas tags de links */
 
@@ -65,4 +63,13 @@ a:hover{ /* hover: ação que acontece ao passar o mouse em cima */
     margin-right: 50px;
     list-style: none; /* retira os estilos das listas da classe Menu */
     font-weight: bold;
+}
+
+.img-thumbnail {
+    height: 20px;
+    width: 20px;
+   }
+
+.contatos{
+    font-size: 10px;
 }
