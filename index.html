@@ -1,59 +1,79 @@
-<!doctype html>
-<html lang="pt-BR">
-    <title> Pedro's portfolio </title>  
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css" />
-        <script src="https://unpkg.com/css-doodle@0.37.3/css-doodle.min.js"></script>
-        <css-doodle click-to-update class="doodle">
-                  @grid: 18 / 100vmax / #0a0c27;
-                  --hue: calc(180 + 1.5 * @x * @y);
-                  background: hsl(var(--hue), 0%, 100%);
-                  margin: -.5px;
-                  transition: @r(.5s) ease;
-                  clip-path: polygon(@p(
-                    '0 0, 100% 0, 100% 100%',
-                    '0 0, 100% 0, 0 100%',
-                    '0 0, 100% 100%, 0 100%',
-                    '100% 0, 100% 100%, 0 100%'
-                  ));
-        </css-doodle>
-    </head>
 
-    <body>
-        
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pedro's portfolio</title>
+<link rel="stylesheet" href="styles.css">
+<script src="script.js"></script>
+</head>
+<body>
 
-        <div class="tudo">
-        <nav class="menu">
-            <ul>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Portfólio</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-        </nav>
-        
+<header>
+<h1>Pedro H. D. A. Sena</h1>
+<h2>FullStack Developer </h2>
 
-        <div class="sobre">
-        <h1 class="name"> Pedro H. D. A. Sena </h1>
-        <h2 class="role"> Back-end Developer </h2>
-            <p class="bio">Eng: Industrial Electrician and Industrial Automation Technician. Bachelor's Degree in Computer Engineering. 
-I have a large experience in the IT areas, some examples are: PLCs programing, Arduino programing, Electronic circuits, network, Python and it's framework Django.
-Currently specializing in Database, Artificial Intelligence and Cybersecurity. 
-<br>PT-br: Eletricista Industrial e Técnico em Automação Industrial. Bacharelando em Engenharia da Computação.
-Possuo grande vivência nas áreas de tecnologia, como por exemplo: programação em CLP's, programação em Arduino, circuitos eletrônicos, redes, Python e em seu framework Django.
-Atualmente me especializando em Banco de Dados, Inteligência Artificial e Cibersegurança.</p>
-        </div>
+</header>
 
-        <div class="portfolio">
-		    <h6 class="links">Portfólio</h6>
-		    <a href="https://github.com/Ry00sh1"><img src="C:\Users\phase\OneDrive\Área de Trabalho\meuPrimeiroSite\github-icon.png" class="img-thumbnail"></a>
-	    </div>
+<button id="changeColorButton">Black</button>
+<!---
+<div class="menu">
+  <a href="#about">About me</a>
+  <a href="#portfolio">Portfolio</a>
+  <a href="#contact">Contact</a>
+</div>
+--->
 
-        <h6 class="contatos">Contatos</h6>
-        <div class="contatos">
-		    <span>Email: phasena@outlook.com</span>
-        </div>
-        </div>
-    
+
+<main>
+<section id="about" class="section">
+  <div class="about-content">
+    <div class="about-image">
+      <img src="C:\Users\phase\OneDrive\Área de Trabalho\projetos\meuPrimeiroSite\resources\self-pic.jpeg" alt="Foto de Pedro">
+    </div>
+    <div class="about-text">
+      <h2>About me</h2>
+      <p>I am a person who has been breathing technology since I was a child, who likes to have new ideas and put them into practice, to research and read articles about new technologies, to dream of an accessible, sustainable and fun future.
+        I seek experience, knowledge and create contacts with people who share the same dream and lifestyle.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="portfolio" class="section">
+  <h2>Portfolio</h2>
+  <div class="img-container">
+    <img src="exemplo1.jpg" alt="Exemplo 1">
+    <img src="exemplo2.jpg" alt="Exemplo 2">
+    <img src="exemplo3.jpg" alt="Exemplo 3">
+  </div>
+</section>
+
+<section id="technologies" class="section">
+  <h2>Knowledges</h2>
+  <ul>
+    <li>HTML5</li>
+    <li>CSS3</li>
+    <li>JavaScript</li>
+    <li>Python</li>
+    <li>Agile</li>
+  </ul>
+</section>
+
+<section id="contact" class="section">
+  <h2>Contact</h2>
+  <a href="mailto:phasena@outlook.com">E-mail</a>
+  <a href="https://www.linkedin.com/in/pedro-h-a-sena/">LinkedIn</a>
+  <p>Phone number: (21) 9-6452-9482</p>
+</section>
+
+</main>
+
+<footer>
+  <p>&copy; 2024 Pedro Sena's portfolio</p>
+</footer>
+
+</body>
 </html>
